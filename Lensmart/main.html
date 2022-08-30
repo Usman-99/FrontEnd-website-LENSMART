@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lensmart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="w3.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+     
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        .w3-bar .w3-button {
+            padding: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card container-fluid" id="myNavbar">
+                <a class="navbar-brand" href="main.html">
+                    <img src="logo.jpg" alt="" width="90" height="50" class="d-inline-block align-text-top"></a>
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+                    <a href="main.html" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-home"></i> HOME</a>
+                    <a href="#about" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-globe"></i> ABOUT</a>
+                    <a href="#team" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-children"></i> TEAM</a>
+                    <a href="#eye" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-glasses"></i> EYEGLASSES</a>
+                    <a href="account.html" target="_blank" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-user"></i> MY ACCOUNT</a>
+                    <a href="#contact" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-envelope"></i>
+                        CONTACT</a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                    onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+            style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-18">Close
+                ×</a>
+            <a href="main.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+            <a href="#eye" onclick="w3_close()" class="w3-bar-item w3-button">EYEGLASSES</a>
+            <a href="account.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">MY ACCOUNT</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        </nav>
+        <section id="home">
+        <div class="webimg">
+            <p style="text-align: justify;">
+                <a title="Buy Independence Day Eyeglasses " href="#eye"><img class="img-fluid"
+                        title="Buy Stylish Independence Day Glasses at Eyeglasses PK" src="web.JPG"
+                        alt="Buy Stylish Independence Day Glasses at Eyeglasses PK">
+                </a>
+            </p>
+        </div>
+        </section>
+        <br>
+        <br>
+        <!-- About Section -->
+        <div class="w3-container" style="padding:110px 14px" id="about">
+            <h3 class="mb-5 w3-center w3-xlarge"><b>ABOUT THE COMPANY</b></h3>
+            <p class="w3-center w3-xlarge"><b>Key features of our company</b></p>
+            <div class="w3-row-padding w3-center" style="margin-top:64px">
+                <div class="w3-quarter">
+                    <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Responsive</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore.</p>
+                </div>
+                <div class="w3-quarter">
+                    <i class="fa fa-eye w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Safety</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore.</p>
+                </div>
+                <div class="w3-quarter">
+                    <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore.</p>
+                </div>
+                <div class="w3-quarter">
+                    <i class="fa fa-hourglass w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Punctual</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- Team Section -->
+        <div class="w3-container" style="padding:100px 14px" id="team">
+            <h3 class="mb-5 w3-center w3-xlarge"><b>THE TEAM</b></h3>
+            <p class="w3-center w3-xlarge"><b>Persons who run this company</b></p>
+            <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+                        <div class="w3-container">
+                            <br>
+                            <h3><b>Usman Yousuf</b></h3>
+                            <br>
+                            <p class="w3-opacity">CEO & Founder</p>
+                            <br>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <br>
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-phone"></i>
+                                    +92304356783</button></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Yasoob" style="width:100%">
+                        <div class="w3-container">
+                            <br>
+                            <h3><b>Yasoob Raza</b></h3>
+                            <br>
+                            <p class="w3-opacity">Manager</p>
+                            <br>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <br>
+                            <p class="w3-button w3-light-grey w3-block"><i class="fa fa-phone"></i>+92333469876</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Hassan" style="width:100%">
+                        <div class="w3-container">
+                            <br>
+                            <h3><b>Hassan Mehdi</b></h3>
+                            <br>
+                            <p class="w3-opacity">Sales Manager</p>
+                            <br>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <br>
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-phone"></i>
+                                    +92309876543</button></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Jahanzaib" style="width:100%">
+                        <div class="w3-container">
+                            <br>
+                            <h3><b>Jahanzaib</b></h3>
+                            <br>
+                            <p class="w3-opacity">Frame Designer</p>
+                            <br>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <br>
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-phone"></i>
+                                    +92309763218</button></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Eyeglasses Section -->
+        <div class="w3-container" style="padding:90px 16px" id="eye">
+            <h3 class="mb-5 w3-center w3-xlarge"><b>EYEGLASSES CATEGORIES</b></h3>
+            <p class="w3-center w3-xlarge"><b>WE CARE ABOUT YOUR CHOICE</b></p>
+
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-col l3 m6">
+                    <a href="price.html#men">
+                        <img src="men.png" style="width:100%" class="w3-hover-opacity" alt="men glasses">
+                    </a>
+                </div>
+                <div class="w3-col l3 m6">
+                    <a href="price.html#women">
+                        <img src="women.png" style="width:100%" class="w3-hover-opacity" alt="women glasses">
+                    </a>
+                </div>
+                <div class="w3-col l3 m6">
+                    <a href="price.html#kid">
+                        <img src="kids.png" style="width:100%" class="w3-hover-opacity" alt="kids glasses">
+                    </a>
+                </div>
+                <div class="w3-col l3 m6">
+                    <a href="price.html#sun">
+                        <img src="sunglasses.png" style="width:100%" class="w3-hover-opacity" alt="Sunglasses">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--contact section-->
+        <div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
+            <h3 class="w3-center w3-xlarge"><b>CONTACT US</b></h3>
+            <div style="margin-top:48px">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Karachi, Pakistan</p><br>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +92 33151515</p><br>
+                <a href="mailto:usmancis99@gmail.com"><p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: lensmart@gmail.com</p></a>
+                <br>
+                <!-- Image of location/map -->
+                <img src="map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+            </div>
+        </div>
+
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+                top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa-brands fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa-brands fa-instagram w3-hover-opacity"></i>
+                <i class="fa-brands fa-twitter w3-hover-opacity"></i>
+                <i class="fa-brands fa-youtube w3-hover-opacity"></i>
+            </div>
+            <p class="w3-large">This website is made by combined efforts of Usman, Hassan, Yasoob and Jahanzaib!</p>
+            <br>
+            <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="#eye">Buy now</a>
+        </footer>
+    </div>
+    <script src="main.js">// Toggle between showing and hiding the sidebar when clicking the menu icon
+
+    </script>
+</body>
+
+</html>
